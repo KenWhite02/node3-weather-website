@@ -3,12 +3,14 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "node src/app.js"
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js -e js,hbs"
   },
   "license": "MIT",
   "dependencies": {
     "express": "4.16.4",
     "hbs": "4.0.1",
+    "nodemon": "^2.0.7",
     "postman-request": "^2.88.1-postman.30"
   }
 }
