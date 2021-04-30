@@ -17,10 +17,11 @@ const forecast = (latitude, longitude, callback) => {
       const weatherDescription = body.current.weather_descriptions[0];
       const temperature = body.current.temperature;
       const humidity = body.current.humidity;
+      const precipitation = body.current.precip;
 
       callback(
         undefined,
-        `${weatherDescription}. It is currently ${temperature} degrees out. Humidity outside is currently ${humidity}%.`
+        `${weatherDescription}. It is currently ${temperature} degrees out. Humidity outside is currently ${humidity}%. Signs of precipitation today are ${precipitation}.`
       );
     }
   });
